@@ -20,9 +20,13 @@ class MovieWidget extends StatelessWidget {
             style: TextStyle(fontSize: 18),
           ),
           Text(
+            'Rating: '
             '${movieModel.voteAverage}',
           ),
-          Text(movieModel.overview)
+          Text(
+            'Overview: '
+            '${movieModel.overview}',
+          )
         ],
       ),
     );

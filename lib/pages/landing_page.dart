@@ -45,9 +45,11 @@ class _LandingPageState extends State<LandingPage> {
                           ...snapshot.data!.map((movieProduct) {
                             var index = snapshot.data!.indexOf(movieProduct);
                             return Container(
-                                decoration: BoxDecoration(),
-                                margin:
-                                    EdgeInsets.only(left: index > 0 ? 10 : 0),
+                                decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(15)),
+                                margin: EdgeInsets.only(
+                                    left: 20, right: 20, top: 20),
                                 child: MovieWidget(movieModel: movieProduct));
                           })
                         ],
